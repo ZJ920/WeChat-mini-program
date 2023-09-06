@@ -1,0 +1,43 @@
+<view class="content">
+    <view class="head">
+        <view wx:if="{{type==-1}}">
+            <image src="/pages/images/icon/address.png"></image>
+            <text bindtap="selectAddress">{{address}}</text>
+        </view>
+        <view wx:else>
+            <image src="/pages/images/icon/address.png"></image>
+            <view  bindtap="selectAddress" class="address1">{{addresses.address}}</view>
+        </view>
+        <view>></view>
+    </view>
+    <view class="order1">
+        <text class="text1">不凡商城</text>
+        <view class="order2">
+            <view class="order3">
+                <image src="{{goodsDetail.listPic}}"></image>
+                <view class="order4">
+                    <view class="bookname"><text>{{goodsDetail.bookName}}</text></view>
+                    <view class="price1">￥{{goodsDetail.goodsPrice}}
+                        <view style="color:grey;font-size:10px;margin:5px 0 0 5px;">x{{count}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="order5">
+            <view class="text2">
+                送货说明
+            </view>
+            <view class="order6">
+                <view class="text3">不凡快递</view>
+                <view class="text3">今日22:00前付款</view>
+                <view class="text3">预计明天送达</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="bottomnav">
+    <view bindtap="tijiao" class="btnav1"><text class="btnavtext">立即购买</text></view>
+    <view class="price1" style="height:50xp; line-height: 50px;">
+        <text class="text4">总额（含运费）:</text>￥{{goodsDetail.goodsPrice}}
+    </view>
+</view>

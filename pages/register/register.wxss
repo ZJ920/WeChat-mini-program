@@ -1,0 +1,38 @@
+/* pages/register/register.wxss */
+.input{
+    border-bottom:1px solid #ccc;
+}
+.vhead{
+    background-color:white;
+    height:40px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.content{
+    background-color:#F4F4F4;
+}
+.text1{
+    position:relative;
+    line-height: 40px;
+}
+.vsubmit{
+    background-color: white;
+    height:50px;
+    margin-bottom: 5px;
+}
+.vsubmit2{
+    display: flex;
+    justify-content: space-around;
+    line-height:50px;
+}
+.text2{
+    color:#666565;font-weight: bolder;
+    width:100px;
+    text-align: center;
+}
+.input1{
+    margin:15px 0 0 -50px;
+    display: flex;
+    height:25px;
+}

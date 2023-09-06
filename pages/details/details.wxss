@@ -1,0 +1,170 @@
+/* pages/details/details.wxss */
+.content{
+    background-color:#f4f4f4;
+    position: relative;
+    width:100%;
+    z-index :1;
+}
+.head{
+    width:100%;
+    background-color: white;
+    height:35px;
+    margin-top:10px ;
+    display: flex;
+}
+.text1{
+    width:70px;
+    text-align: center;
+    height:20px;
+    margin-top:5px;
+}
+.text2{
+    width:25px;
+    text-align: center;
+    font-weight: bolder;
+    color:#096;
+    border:2px solid #DDDDDD;
+    margin-top: 5px;
+    height:20px;
+}
+.text3{
+    width:25px;
+    text-align: center;
+    border:2px solid #DDDDDD;
+    margin-top: 5px;
+    height:20px;
+}
+.a1{
+    width:100%;
+    height:1000px;
+}
+.nav{
+    height:40px;
+    display: flex;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.nav>view{
+    width:50%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+}
+.nav>view.active{
+    color:#096;
+    border-bottom:3px solid #096;
+}
+.v1 image{
+    width:95%;
+    height:500px;
+}
+.v1{
+    width:100%;
+    background-color: white;
+}
+.image1{
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+}
+.logo{
+    border:1px solid black;
+    width:50px;
+    height:20px;
+    font-size:10px;
+    color:white;
+    background-color: #096;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 7px;
+}
+.v2{
+    display: flex;
+    justify-content: left;
+}
+.bookname{
+    font-weight:bolder;
+    margin-left: 10px;
+}
+.v3{
+    width:95%;
+    margin:0 auto;
+}
+.v4{
+    width:100%;
+    margin:0 auto;
+    font-size: 14px;
+    color:grey;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.price1{
+    color:red;
+}
+.price2{
+    text-decoration: line-through;
+    color:grey;
+    font-size: smaller;
+    margin-top:2px;
+    margin-left:10px;
+    margin-bottom: 5px;
+}
+.v5{
+    background-color: white;
+    display: flex;
+    justify-content: left;
+}
+.v52{
+    display: flex;
+    justify-content: space-around;
+    line-height:50px;
+}
+.v5text{
+        color:#666565;
+        font-weight: bolder;
+        width:70px;
+        display: flex;
+        justify-content: space-around;
+}
+.bookinf{
+    margin-top: 10px;
+}
+.bookbottom{
+    margin-top: 10px;
+}
+.logo2{
+    height:20px;
+    margin-top: 15px;
+    width:20px;
+}
+.bottomtext{
+    font-size: 10px;
+    font-weight: bolder;
+}
+.t1{
+    color:#666565;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.logo3{
+    width:20%;
+    height:70px;
+}
+.bottomnav{
+    display: flex;
+    width:100%;
+    z-index:5;
+    bottom:0;
+    position:fixed;
+}
+.btnav1{
+    width:40%;
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+}
+.btnavtext{
+    line-height:70px;
+    color:white;
+}

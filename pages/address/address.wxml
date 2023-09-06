@@ -1,0 +1,23 @@
+<view class="content">
+    <view class="v0">
+        <view class="v1" wx:key="index"  wx:for="{{addresses}}">
+            <view  bindtap="selectaddress" data-type="{{index}}" class="v12">
+                <view class="v2">
+                    <view>{{item.personName}}</view>
+                    <view>{{item.contactNumber}}</view>
+                </view>
+                <view>
+                    {{item.city[2]}}{{item.city[3]}}{{item.city[4]}}
+                    {{item.city[8]}}{{item.city[9]}}{{item.city[10]}}
+                    {{item.city[14]}}{{item.city[15]}}{{item.city[16]}}
+                </view>
+                <view>{{item.address}}</view>
+                <view>{{item.houseNumber}}</view>
+            </view>
+            <view bindtap="updaddress" data-type="{{index}}"style="margin-top:20px;"> <image src="/pages/images/icon/xg.png"></image></view>
+        </view>
+    </view>
+    <view class="button">
+        <button type="primary" bindtap="addAddress">+新增地址</button>
+    </view>
+</view>

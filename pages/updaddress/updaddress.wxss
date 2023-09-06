@@ -1,0 +1,27 @@
+.vsubmit{
+    background-color: white;
+    height:50px;
+    margin-bottom: 5px;
+}
+.vsubmit2{
+    width:90%;
+    display: flex;
+    line-height:50px;
+    justify-content: left;
+    margin:0 auto;
+}
+.text2{
+    font-weight: bolder;
+    width:100px;
+}
+.input1{
+    margin:15px 0 0 -25px;
+    display: flex;
+    height:25px;
+    line-height: 25px;
+    font-size:14px;
+}
+.content{
+    background-color: #f4f4f4;
+    padding:10px 0 ;
+}

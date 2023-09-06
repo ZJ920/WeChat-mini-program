@@ -1,0 +1,52 @@
+<view class="content">
+    <form bindsubmit="submit">
+        <view class="vsubmit">
+            <view class="vsubmit2">
+                <view class="text2">联系人</view>
+                <view class="input1"><input name="personName" type="text" placeholder="{{namemessage}}" /></view>
+            </view>
+        </view>
+        <view class="vsubmit">
+            <view class="vsubmit2">
+                <view class="text2">性别</view>
+                <view class="input1">
+                    <radio-group bindchange="bandleChange">
+                        <radio value="0"> 先生</radio>
+                        <radio value="1"> 女士</radio>
+                    </radio-group>
+                </view>
+            </view>
+        </view>
+        <view class="vsubmit">
+            <view class="vsubmit2">
+                <view class="text2">手机号码</view>
+                <view class="input1"><input name="contactNumber" type="text" placeholder="{{telmessage}}" /></view>
+            </view>
+        </view>
+        <view class="vsubmit">
+            <view class="vsubmit2">
+                    <view class="text2">所在城市</view>
+                    <picker name="pckRegion" bindchange="setRegion" mode='region' value="{{region}}">
+                        {{region[0]}} - {{region[1]}} - {{region[2]}}
+                    </picker>
+            </view>
+        </view>
+        <view class="vsubmit">
+            <view class="vsubmit2">
+                <view class="text2">收货地址</view>
+                <view class="input1">
+                    <input name="txtAddress" bindtap="chooseAddress" type="text" placeholder="{{selectAddress}}" value="{{address}}" />
+                </view>
+            </view>
+        </view>
+        <view class="vsubmit">
+            <view class="vsubmit2">
+                <view class="text2">门牌号</view>
+                <view class="input1"><input name="houseNumber" type="text" placeholder="{{housemessage}}" /></view>
+            </view>
+        </view>
+        <view style="background-color: white;">
+            <view><button form-type="submit" type="primary">保存</button></view>
+        </view>
+    </form>
+</view>

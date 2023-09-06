@@ -1,0 +1,65 @@
+<!--pages/me/me.wxml-->
+<view class="content">
+    <!--头部-->
+    <view class="head">
+        <view>
+        <image src="../images/head.jpg " style = "width:70px;height:70px;"></image>
+        </view>
+        <view class="login">
+        <text wx:if="{{!flag}}"bindtap="toLogin">立即登录</text>
+        <text wx:else>{{userName}}</text>
+        <text>></text>
+        </view>
+    </view>
+    <!--我的订单-->
+    <view class="order">
+    <view class="text1">
+    <text>我的订单</text>
+    </view>
+    <view class="logo2">
+        <view class="order0">
+        <a href='#'> <image src="../images/dingdan/dfk.png"></image><text>待付款</text></a></view>
+        <view class="order0">
+        <a href='#'> <image src="../images/dingdan/dsh.png"></image><text>待收货</text></a></view>
+        <view class="order0">
+        <a href='#'> <image src="../images/dingdan/dpj.png"></image><text>已完成</text></a></view>
+    </view>
+    </view>
+    <!--列表导航-->
+    <view class="item">
+    <view class="it1">
+        <view class="item1">
+            <text class="i1">我的消息</text>
+            <text class="i2">></text>
+        </view>
+        <view class="item1">
+            <text class="i1">我的收藏</text>
+            <text class="i2">></text>
+        </view>
+        <view class="item1">
+            <text class="i1">账户余额</text>
+            <text class="i2">{{money}}></text>
+        </view>
+    </view>
+    <view class="it1">
+        <view class="item1" bindtap="updPassword">
+            <text class="i1">修改密码</text>
+            <text class="i2">></text>
+        </view>
+        <view class="item1" bindtap="advice">
+            <text class="i1">意见反馈</text>
+            <text class="i2">></text>
+        </view>
+        <view class="item1"bindtap="remove">
+            <text class="i1">清除缓存</text>
+            <text class="i2">></text>
+        </view>
+    </view>
+    <view class="it2">
+        <view class="item1">
+            <text class="i1">知识拓展</text>
+            <text class="i2">></text>
+        </view>
+    </view>
+    </view>
+</view>

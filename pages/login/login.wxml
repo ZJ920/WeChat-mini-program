@@ -1,0 +1,55 @@
+<!--pages/denglu/denglu.wxml-->
+<view class="content">
+<view class="nav">
+    <view data-type="0" bindtap="setCurrent" class="{{currentIndex==0?'active':'0'}}">账号密码登录</view>
+    <view data-type="1"bindtap="setCurrent" class="{{currentIndex==1?'active':'1'}}">手机快捷登录</view>
+</view>
+<form bindsubmit="submit">
+<swiper class="a1" current="{{currentIndex}}" bindchange="onChange" >
+<swiper-item>
+<view>
+<form bindsubmit="submit">
+    <view class="vsubmit">
+    <view class="vsubmit2">
+        <view class="text1">账号</view>
+        <view class="input1"><input name="name"type="text" placeholder="{{idmessage}}"/></view>
+    </view>
+    </view>
+    <view class="vsubmit">
+    <view class="vsubmit2">
+        <view class="text1">密码</view>
+        <view class="input1"><input name="pwd"type="password" placeholder="{{pwdmessage}}"/></view>
+    </view>
+    </view>
+    <view style="background-color: white; width:90%;margin:0 auto;">
+    <view><button style="width:100%;"form-type="submit" type="primary">登录</button></view>
+    <view class="text2"bindtap="toRegister">没有账号？立即注册</view>
+    </view>
+</form>
+</view>
+</swiper-item>
+<swiper-item>
+<view>
+    <view class="vsubmit">
+    <view class="vsubmit2">
+        <view class="text1">手机号</view>
+        <view class="input1"><input bindinput="input1"name="tel"type="text" placeholder="{{telmessage}}"/></view>
+        <view wx:if="{{!flag}}"bindtap="getValid" class="yanzheng"><view style="line-height:25px;color:grey;">获取验证码</view></view>
+        <view wx:else class="yanzheng"><view style="line-height:25px;color:grey;">{{second}}</view></view>
+    </view>
+    </view>
+    <view class="vsubmit">
+    <view class="vsubmit2">
+        <view class="text1">验证码</view>
+        <view class="input1"><input value="{{yzma}}"name="yanzheng "type="text" placeholder="{{yzmessage}}"/></view>
+    </view>
+    </view>
+    <view style="background-color: white; width:90%;margin:0 auto;">
+    <view><button style="width:100%;"form-type="submit" type="primary">登录</button></view>
+    <view class="text2" bindtap="toRegister">没有账号？立即注册</view>
+    </view>
+</view>
+</swiper-item>
+</swiper>
+</form>
+</view>

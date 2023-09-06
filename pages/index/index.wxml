@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view class="content">
+    <view class="head">
+        <view class="search" bindtap="toSearch">
+            <image src="../images/search-1.jpg" style="width:15px;height:19px"></image>
+            <text style=" color:#c0c0c0; margin:0 auto;">搜索不凡商城</text>
+        </view>
+    </view>
+    <swiper indicator-dots="true" autoplay circular>
+        <swiper-item>
+            <image src="../images/1.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../images/2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../images/3.jpg"></image>
+        </swiper-item>
+    </swiper>
+    <view class="hot">
+        <view class="title">
+            <view class="h1">热门技术</view>
+            <view class="h2" data-type="0" bindtap="toGoods">查看更多></view>
+        </view>
+    </view>
+    <view class="booklist">
+        <view style="flex:1" wx:for="{{hotList}}" wx:key="index" bindtap="toDetails" data-bookid="{{item.bookInfoId}}">
+            <view class="ht1">
+                <image src="{{item.listPic}}"></image>
+                <view style="font-size:10px">{{item.goodsName}}</view>
+                <view style="color :red">￥{{item.goodsPrice}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="hot">
+        <view class="title">
+            <view class="h1">秒杀时刻</view>
+            <view class="h2" data-type="1" bindtap="toGoods">查看更多></view>
+        </view>
+    </view>
+    <view class="booklist">
+        <view style="flex:1" wx:for="{{spikeList}}" bindtap="toDetails" data-bookid="{{item.bookInfoId}}" wx:key="index">
+            <view class="ht1">
+                <image src="{{item.listPic}}"></image>
+                <view style="font-size:10px">{{item.goodsName}}</view>
+                <view style="color :red">￥{{item.goodsPrice}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="hot">
+        <view class="title">
+            <view class="h1">畅销书籍</view>
+            <view class="h2" data-type="2" bindtap="toGoods">查看更多></view>
+        </view>
+    </view>
+    <view class="booklist">
+        <view style="flex:1" wx:for="{{bestSellerList}}" bindtap="toDetails" data-bookid="{{item.bookInfoId}}" wx:key="index">
+            <view class="ht1">
+                <image src="{{item.listPic}}"></image>
+                <view style="font-size:10px">{{item.goodsName}}</view>
+                <view style="color :red">￥{{item.goodsPrice}}</view>
+            </view>
+        </view>
+    </view>
+</view>

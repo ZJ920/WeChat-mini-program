@@ -1,0 +1,40 @@
+/* pages/category/category.wxss */
+.right{
+    width:70%;
+    position: absolute;  
+    top: 0;  
+    right: 0; 
+    background-color: white;
+}
+.right image{
+    width:60px;
+    height:70px;
+}
+.content{
+    display: flex;
+    background-color: #f4f4f4;
+}
+.i1{
+    width:30%;
+    float: left;
+    height:120px;
+    font-size: 14px;margin-left:5px;
+}
+.content{
+    width:100%;
+    position: relative;
+}
+.left{
+    width:27%;
+}
+.v1{
+    height:40px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 40px;
+    background-color: white;
+}
+.v1.active{
+    border-left:5px green solid;
+}

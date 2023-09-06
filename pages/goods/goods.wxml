@@ -1,0 +1,67 @@
+<view class="content">
+    <view class="head">
+        <view class="search" bindtap="toSearch">
+            <image src="../images/search-1.jpg" style="width:15px;height:19px"></image>
+            <text style=" color:#c0c0c0; margin:0 auto;">搜索不凡商城</text>
+        </view>
+    </view>
+    <view class="nav">
+        <view data-type="0" bindtap="setCurrent" class="{{currentIndex==0?'active':'0'}}">热门技术</view>
+        <view data-type="1" bindtap="setCurrent" class="{{currentIndex==1?'active':'1'}}">秒杀时刻</view>
+        <view data-type="2" bindtap="setCurrent" class="{{currentIndex==2?'active':'2'}}">畅销书籍</view>
+    </view>
+
+    <swiper class="a1" indicator-dots="true" autoplay circular bindchange="onChange">
+        <swiper-item>
+            <block>
+                <view class="b1" style="flex:1" wx:for="{{dataAll}}" wx:key="index">
+                    <image class="image1" src="{{item.listPic}}"></image>
+                    <view class="c1">
+                        <view class="text1">{{item.goodsName}}</view>
+                        <view class="text2">作者:{{item.author}}</view>
+                        <view class="text2">出版社:{{item.bookConcern}}</view>
+                        <view class="text2">出版时间:{{item.publishTime}}</view>
+                        <view class="price1">
+                            <view class="p1">￥{{item.goodsPrice}}</view>
+                            <view class="p2">￥{{item.goodsCost}}</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item>
+            <block>
+                <view class="b1" style="flex:1" wx:for="{{dataAll}}" wx:key="index">
+                    <image class="image1" src="{{item.listPic}}"></image>
+                    <view class="c1">
+                        <view class="text1">{{item.goodsName}}</view>
+                        <view class="text2">作者:{{item.author}}</view>
+                        <view class="text2">出版社:{{item.bookConcern}}</view>
+                        <view class="text2">出版时间:{{item.publishTime}}</view>
+                        <view class="price1">
+                            <view class="p1">￥{{item.goodsPrice}}</view>
+                            <view class="p2">￥{{item.goodsCost}}</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item>
+            <block>
+                <view class="b1" style="flex:1" wx:for="{{dataAll}}" wx:key="index">
+                    <image class="image1" src="{{item.listPic}}"></image>
+                    <view class="c1">
+                        <view class="text1">{{item.goodsName}}</view>
+                        <view class="text2">作者:{{item.author}}</view>
+                        <view class="text2">出版社:{{item.bookConcern}}</view>
+                        <view class="text2">出版时间:{{item.publishTime}}</view>
+                        <view class="price1">
+                            <view class="p1">￥{{item.goodsPrice}}</view>
+                            <view class="p2">￥{{item.goodsCost}}</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,111 @@
+/* pages/order/order.wxss */
+.head{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding:0 10px;
+  margin-top:10px;
+  background-color: white;
+  font-weight: bolder;
+  font-size:14px;
+}
+.head image{
+  width: 20px;
+  height: 20px;
+}
+.content{
+    background-color:#f4f4f4;
+    width:100%;
+    z-index :1;
+    height:100px;
+    height:700px;
+}
+.text1{
+    font-weight: bolder;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height:50px;
+}
+.order1{
+    margin-top: 10px;
+}
+.order2 image{
+    width:80px;
+    height:120px;
+}
+.price1{
+    color:red;
+    font-weight: bolder;
+    display: flex;
+}
+.bookname{
+    margin-top:10px;
+    font-weight:bolder;
+    height:65px;
+}
+.order2{
+    background-color: white;
+    margin-top:5px;
+    padding:5px;
+}
+.order3{
+    display:flex;
+    width:95%;
+    margin:0 auto;
+}
+.order4{
+    display: inline;
+    margin-left: 10px;
+}
+.order5{
+    background-color: white;
+    margin-top:5px;
+    padding:5px;
+    display: flex;
+    justify-content: space-between;
+}
+.rder6{
+    display: inline;
+}
+.text2{
+    height:50px;
+    line-height:50px;
+}
+.text3{
+    text-align: center;
+    font-size:12px;
+}
+.bottomnav{
+    display: flex;
+    width:100%;
+    z-index:5;
+    bottom:0;
+    position:fixed;
+    flex-direction: row-reverse;
+}
+.btnavtext{
+    color:white;
+}
+.btnav1{
+    height:50px;
+    line-height:50px;
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+    right:0;
+    margin-left:10px;
+}
+.text4{
+    color:black;
+    font-weight: normal;
+    font-size:12px;
+}
+.address1{
+    width:300px;
+    height:30px;
+    font-size:12px;
+}

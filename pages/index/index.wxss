@@ -1,0 +1,65 @@
+/**index.wxss**/
+.head{
+    background-color: #096;
+    height:40px;
+}
+.search{
+    width:95%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    height:30px;
+    margin-bottom: 5px;
+    background-color: #EAEAEC;
+    border-radius: 15px;
+}
+.search image{
+    position: relative;
+    top:5px;
+}
+.booklist image{
+    width:80px;
+    height:120px;
+}
+.booklist{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.title{
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.hot{
+    margin:0 auto;
+    height:40px;
+    margin-top: 10px;
+    background-color:white;
+    border-bottom:1px solid #096;
+}
+.content{
+    background-color:#F4F4F4;
+}
+.h1{
+    font-size: large;
+    margin:5px;
+    color:#096;
+}
+.h2{
+    font-size: small;
+    margin:10px;
+    color:grey;
+}
+.ht1{
+    width:90%;
+    border:1px solid #096;
+    border-radius: 10px;
+    height:160px;
+    margin:5px 5px;
+    padding: 10px 0px;
+    background-color: white;
+}
+.booklist{
+    background-color: white;
+}

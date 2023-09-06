@@ -1,0 +1,42 @@
+<!--pages/register/register.wxml-->
+<view class="content">
+<view class="vhead"><text class="text1">创建账号</text></view>
+<view>
+<form bindsubmit="submit">
+    <view class="vsubmit">
+    <view class="vsubmit2">
+        <view class="text2">用户名</view>
+        <view class="input1"><input name="userName"type="text" placeholder="{{namemessage}}"/></view>
+    </view>
+    </view>
+    <view class="vsubmit">
+    <view class="vsubmit2">
+        <view class="text2">手机号</view>
+        <view class="input1"><input  value="{{userTel}}"name="userTel"type="text" placeholder="{{telmessage}}"/></view>
+    </view>
+    </view>
+    <view class="vsubmit">
+    <view class="vsubmit2">
+        <view class="text2">密码</view>
+        <view class="input1"><input  value="{{userPassword}}" name="userPassword"type="password" placeholder="{{mimamessage}}"/></view>
+    </view>
+    </view>
+    <view class="vsubmit">
+    <view class="vsubmit2">
+        <view class="text2">确认密码</view>
+        <view class="input1"><input value="{{userConfirm}}" name="userConfirm" type="password" placeholder="{{confirmmessage}}"/>
+        </view>
+    </view>
+    </view>
+    <view class="vsubmit">
+    <view class="vsubmit2">
+        <view class="text2">昵称</view>
+        <view class="input1"><input name="nicheng"type="text" placeholder="{{nichengmessage}}"/></view>
+    </view>
+    </view>
+    <view style="background-color: white;">
+    <view><button form-type="submit" type="primary">注册</button></view>
+    </view>
+</form>
+</view>
+</view>

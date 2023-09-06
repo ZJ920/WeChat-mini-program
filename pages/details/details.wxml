@@ -1,0 +1,71 @@
+<view class="content">
+    <view class="head">
+        <view class="text1">数量</view>
+        <view class="text2" bindtap="reduce">-</view>
+        <view class="text3">{{count}}</view>
+        <view class="text2" bindtap="increase">+</view>
+    </view>
+    <view class="nav">
+        <view data-type="0" bindtap="setCurrent" class="{{currentIndex==0?'active':'0'}}">图书详情</view>
+        <view data-type="1" bindtap="setCurrent" class="{{currentIndex==1?'active':'1'}}">出版信息</view>
+    </view>
+    <swiper class="a1" bindchange="onChange">
+        <swiper-item>
+            <view class="v1">
+                <view class="image1">
+                    <image src="{{goodsDetail.listPic}}"></image>
+                </view>
+                <view class="v2">
+                    <view class="logo"><text style="line-height: 20px;">莫凡自营</text></view>
+                    <view><text class="bookname">{{goodsDetail.bookName}}</text></view>
+                </view>
+                <view class="v3">
+                    <view class="v4">{{goodsDetail.briefIntroduction}}</view>
+                    <view style="display: flex;">
+                        <view class="price1">￥{{goodsDetail.goodsPrice}}</view>
+                        <view class="price2">定价:{{goodsDetail.goodsCost}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="bookinf">
+                <view class="v5">
+                    <view class="v52">
+                        <view class="v5text">作者</view>
+                        <view style="font-size: 12px;">{{goodsDetail.author}}</view>
+                    </view>
+                </view>
+                <view class="v5">
+                    <view class="v52">
+                        <view class="v5text">出版</view>
+                        <view style="font-size: 12px;">{{goodsDetail.bookConcern}},{{goodsDetail.publishTime}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="bookbottom">
+                <view class="v5">
+                    <view class="v52">
+                        <image class="logo2" src="/pages/images/support.png"></image>
+                        <view class="bottomtext">正品保障</view>
+                        <image class="logo2" src="/pages/images/support.png"></image>
+                        <view class="bottomtext">支持礼品卡</view>
+                        <image class="logo2" src="/pages/images/support.png"></image>
+                        <view class="bottomtext">支持7日无理由退货</view>
+                        <image class="logo2" src="/pages/images/support.png"></image>
+                        <view class="bottomtext">礼品包装</view>
+                    </view>
+                </view>
+                <view class="v5">
+                    <view class="v52">
+                        <view class="v5text">莫凡配送</view>
+                        <view class="t1">运费8元，满66元包邮</view>
+                    </view>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>
+<view class="bottomnav">
+    <image class="logo3" src="/pages/images/cart.png"></image>
+    <view class="btnav1"><text class="btnavtext">加入购物车</text></view>
+    <view bindtap="buy" class="btnav1" style="background-color: green;"><text class="btnavtext">立即购买</text></view>
+</view>

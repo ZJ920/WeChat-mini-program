@@ -1,0 +1,17 @@
+<view class="content">
+    <view class="left">
+        <view class="v1 {{curIndex == index ? 'active' : ''}}" wx:for="{{category}}" wx:key="index">
+            <view bindtap="click" data-index="{{index}}">{{item.firstTypeName}}</view>
+        </view>
+    </view>
+    <view class="right">
+        <view wx:for="{{category[curIndex].children}}" wx:key="index">
+            <view class="i1">
+                <view >
+                    <image src="{{item.secondTypeIcon}}"></image>
+                    <view style="text-align: center;">{{item.secondTypeName}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
